@@ -1,0 +1,39 @@
+@import "../../design/design-tokens.css";
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  html, body {
+    overflow-x: clip;
+    background-color: var(--color-paper);
+    color: var(--color-ink-primary);
+    font-family: var(--font-body);
+  }
+
+  ::selection {
+    background-color: var(--color-accent-subtle);
+    color: var(--color-accent);
+  }
+}
+
+/* Custom Utilities */
+@layer utilities {
+  .bg-grid-paper {
+    background-color: var(--color-paper);
+    background-image: 
+      linear-gradient(to right, var(--grid-line-color) 1px, transparent 1px),
+      linear-gradient(to bottom, var(--grid-line-color) 1px, transparent 1px);
+    background-size: var(--grid-size) var(--grid-size);
+  }
+
+  /* Hide scrollbar for clean chip strips */
+  .no-scrollbar::-webkit-scrollbar {
+    display: none;
+  }
+  .no-scrollbar {
+    -ms-overflow-style: none;
+    scrollbar-width: none;
+  }
+}

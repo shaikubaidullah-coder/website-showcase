@@ -1,0 +1,74 @@
+/* ==========================================================================
+   Design Tokens: The Digital Atelier & Exhibition Showcase
+   Author: Principal Frontend Engineer & Design Systems Lead
+   Theme: Atelier / Curated Exhibition
+   ========================================================================== */
+
+:root {
+  /* Surface & Canvas Colors */
+  --color-paper: #FAF8F5;
+  --color-paper-subtle: #F3EFEA;
+  --color-surface: #FFFFFF;
+  --color-surface-bezel: #F5F2EB;
+  --color-surface-elevated: #FFFFFF;
+  
+  /* Ink & Typography Colors */
+  --color-ink-primary: #1B1B19;
+  --color-ink-secondary: #66645E;
+  --color-ink-muted: #8F8C84;
+  --color-ink-faint: #B5B2A8;
+  --color-ink-inverse: #FAF8F5;
+  
+  /* Accents */
+  --color-accent: #2A5A44;
+  --color-accent-hover: #1E4332;
+  --color-accent-subtle: #EBF2ED;
+  --color-accent-border: #BCD4C4;
+  
+  /* Status Indicators */
+  --color-status-live: #10B981;
+  --color-status-live-pulse: rgba(16, 185, 129, 0.25);
+  --color-status-badge-bg: #ECFDF5;
+  --color-status-badge-border: #A7F3D0;
+  --color-status-badge-text: #065F46;
+  
+  /* Borders & Dividers */
+  --color-border-hairline: rgba(27, 27, 25, 0.08);
+  --color-border-medium: rgba(27, 27, 25, 0.14);
+  --color-border-strong: rgba(27, 27, 25, 0.24);
+  
+  /* Grid & Pattern */
+  --grid-line-color: rgba(27, 27, 25, 0.045);
+  --grid-size: 24px;
+  
+  /* Typography Families */
+  --font-display: "Newsreader", "Fraunces", Georgia, "Times New Roman", serif;
+  --font-body: "Geist", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+  --font-mono: "Geist Mono", "JetBrains Mono", ui-monospace, Menlo, monospace;
+  
+  /* Shadows */
+  --shadow-subtle: 0 1px 3px rgba(27, 27, 25, 0.04), 0 1px 2px rgba(27, 27, 25, 0.02);
+  --shadow-card: 0 4px 12px rgba(27, 27, 25, 0.03), 0 1px 3px rgba(27, 27, 25, 0.02);
+  --shadow-card-hover: 0 16px 32px -8px rgba(27, 27, 25, 0.08), 0 4px 8px -2px rgba(27, 27, 25, 0.04);
+  --shadow-modal: 0 24px 48px -12px rgba(27, 27, 25, 0.2), 0 8px 16px -4px rgba(27, 27, 25, 0.1);
+  
+  /* Radii */
+  --radius-sm: 6px;
+  --radius-md: 10px;
+  --radius-lg: 16px;
+  --radius-xl: 24px;
+  --radius-full: 9999px;
+  
+  /* Transitions */
+  --transition-spring: all 0.3s cubic-bezier(0.16, 1, 0.3, 1);
+  --transition-fast: all 0.15s ease-out;
+}
+
+/* Base Graph Paper Texture */
+.bg-grid-paper {
+  background-color: var(--color-paper);
+  background-image: 
+    linear-gradient(to right, var(--grid-line-color) 1px, transparent 1px),
+    linear-gradient(to bottom, var(--grid-line-color) 1px, transparent 1px);
+  background-size: var(--grid-size) var(--grid-size);
+}
